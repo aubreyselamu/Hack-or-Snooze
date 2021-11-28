@@ -15,7 +15,7 @@ async function getAndShowStoriesOnStart() {
 /**
  * A render method to render HTML for an individual Story instance
  * - story: an instance of Story
- *
+ * - showDeleteBtn: show delete button?
  * Returns the markup for the story.
  */
 
@@ -24,7 +24,7 @@ function generateStoryMarkup(story, showDeleteBtn = false) {
 
   const hostName = story.getHostName();
 
-  //if a user is logged in, show favorite/not-favorite star
+//if a user is logged in, show favorite/not-favorite star
   const showStar = Boolean(currentUser);
   
   return $(`
@@ -41,9 +41,8 @@ function generateStoryMarkup(story, showDeleteBtn = false) {
     `);
 }
 
-
-
 /** Make delete button HTML for story */
+
 function getDeleteBtnHTML () {
   return `
       <span class="trash-can">
@@ -79,7 +78,6 @@ function putStoriesOnPage() {
 }
 
 
-
 //** Handle submitting new story form */
 async function submitNewStory (evt) {
   console.debug("submitNewStory")
@@ -106,7 +104,6 @@ async function submitNewStory (evt) {
 $("#submit-form").on("submit", submitNewStory);
 
 
-
 /******************************************************************************
  * Functionality for list of user's own stories
  */
@@ -127,9 +124,6 @@ function putUserStoriesOnPage (){
   }
   $("#my-stories").show()
 }
-
-
-
 
 
 /******************************************************************************
