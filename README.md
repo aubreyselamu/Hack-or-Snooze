@@ -6,4 +6,6 @@ Created a functional clone of Hacker News, a social site for computer programmin
 - Front-End: Javascript, HTML, CSS, AJAX, jQuery
 - Backend: Server API
 
+## Screenshot:
+![Screenshot1](https://imgur.com/G2IUkcf)
 
