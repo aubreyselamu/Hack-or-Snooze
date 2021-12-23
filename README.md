@@ -7,5 +7,5 @@ Created a functional clone of Hacker News, a social site for computer programmin
 - Backend: Server API
 
 ## Screenshot:
-![Screenshot1](https://i.imgur.com/G2IUkcf.png)
+![Screenshot1](https://i.imgur.com/71RRZwM.png)
 
